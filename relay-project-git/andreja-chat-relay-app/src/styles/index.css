@@ -1,0 +1,167 @@
+body {
+
+}
+
+.chatContainer {
+  bottom: 0 !important;
+  right: 0 !important;
+  height: 740px !important;
+  max-height: 100% !important;
+  width: 400px !important;
+  border: 1px solid #ddd;
+  position: relative;
+  border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+.title{
+  padding-top: 10px;
+    padding-left: 15px;
+}
+
+.chatTop {
+  display:inline-block;
+background-color: #1D809D!Important;
+box-shadow: none !important;
+color: white;
+
+border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+        margin-bottom: -1px;
+
+    width: 100%;
+    height: 40px;
+
+    z-index: 100;
+
+}
+
+.chatCenter {
+    display:inline-block;
+    position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  height: 628px;
+
+overflow: auto;
+
+
+}
+
+
+  .chatBottom{
+    display: inline-block;
+/* position: relative; */
+position: absolute;
+bottom: 0;
+left: 0;
+  }
+
+.chatBottom input.textarea {
+
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 390px;
+  height: 50px;
+  z-index: 99;
+  background: #fafafa;
+  border: none;
+  outline: none;
+  padding-left:10px;
+  color: #666;
+  font-weight: 400;
+}
+
+.chatCenter .chatList {
+    list-style: none;
+    background: none;
+    margin: 0;
+    padding: 0 0 50px 0;
+
+    margin-bottom: 10px;
+}
+
+.chatCenter .chatList li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.message_container {
+    position:relative;
+    width: 200px;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.message_container input {
+  height: 20px;
+margin: 0;
+width: 100%;
+border-width: 0;
+background-color: transparent;
+}
+
+.message_container div {
+padding-right:20px;
+}
+.message_container img.delete {
+    position:absolute;
+    bottom:7px;
+    right:5px;
+    width:12px;
+    height:12px;
+}
+
+.message_container img.edit {
+    position:absolute;
+    bottom:7px;
+    right:20px;
+    width:12px;
+    height:12px;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+
+.time{
+  font-size: 10px;
+  color: gray;
+  padding-top: 10px;
+}
+
+.avatar {
+      position: relative;
+  left: 5px;
+  z-index: 10000;
+  width: 30px;
+    height: 30px;
+}
+.avatar img {
+
+  display: block;
+  width: 30px;
+    height: 30px;
+}
+
+
+
+.avatar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid white;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
